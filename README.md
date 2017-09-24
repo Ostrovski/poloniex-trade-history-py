@@ -26,14 +26,15 @@ python check.py </path/to/file.json>
 ```
 
 ## Examples
-Grab BTC_XRP history since `2017-09-15` to `foobar.json`:
+Grab BTC_XRP history since `2017-09-15 UTC` to `foobar.json`:
 ```
 python grab.py btc_xrp 2017-09-15T00:00:00 -f foobar.json
-python check foobar.json
+python check.py foobar.json
 ```
 
 ## TODO
-Poloniex provides trade history data in reverse order. Need script to revert grabbed data on disc.
+Poloniex provides trade history data in reverse order. Need script to revert grabbed data on disk.
+Now you can do the trick via `tail -r foobar.json`.
 
 ## Author
 Ivan Velichko <iximiuz@gmail.com>
